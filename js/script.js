@@ -56,7 +56,6 @@ window.onload = function () {
 
   function stopShooting() {
     isShooting = false; 
-    // Stop shooting by clearing the interval
     clearInterval(shootingInterval);
   }
 

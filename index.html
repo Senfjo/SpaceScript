@@ -8,72 +8,68 @@
   </head>
   <body>
     <!-- *********************Intro SCREEN********************** -->
-    <div id="game-intro">
-      <h1>Spacescript</h1>
-      
-      <div id="middle-part">
-        <div id="player-select">player select</div>
-        <div id="preview">preview</div>
-        <div id="controls-container">
-          <img id="arrowImg" src="./images/newArrow.png" alt="arrowKey img" />
-          <br />
-          <ul>
-            <li>Press ArrowUp to fly "UP"</li>
-            <li>Press ArrowDown to fly "Down"</li>
-            <li>Press ArrowRight to fly "Right"</li>
-            <li>Press ArrowLeft to fly "Left"</li>
-          </ul>
-          <img
-            id="spacebarImg"
-            src="./images/spacebar.png"
-            alt="spacebar img"
-          />
-          <br />
-          <ul>
-            <li>Press Spacebar to shoot</li>
-          </ul>
+    <main>
+      <div id="game-intro">
+        <h1>Spacescript</h1>
+
+        <div id="middle-part">
+          <div id="player-select">player select</div>
+          <div id="preview">preview</div>
+          <div id="controls-container">
+            <img id="arrowImg" src="./images/newArrow.png" alt="arrowKey img" />
+            <br />
+            <ul>
+              <li>Press ArrowUp to fly "UP"</li>
+              <li>Press ArrowDown to fly "Down"</li>
+              <li>Press ArrowRight to fly "Right"</li>
+              <li>Press ArrowLeft to fly "Left"</li>
+            </ul>
+            <img
+              id="spacebarImg"
+              src="./images/spacebar.png"
+              alt="spacebar img"
+            />
+            <br />
+            <ul>
+              <li>Press Spacebar to shoot</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="intro-btn">
+          <button id="start-button">Start Game</button>
+        </div>
+        <button class="music-button">
+          <img src="./images/loudspeaker.jpeg" />
+        </button>
       </div>
 
-      <div class="intro-btn">
-        <button id="start-button">Start Game</button>
+      <!-- *********************GAME SCREEN********************** -->
+
+      <div id="game-screen">
+        <button class="music-button">
+          <img src="./images/loudspeaker.jpeg" />
+        </button>
       </div>
-      <button class="music-button">
-        <img src="./images/loudspeaker.jpeg" />
-      </button>
-    </div>
 
-    <!-- *********************GAME SCREEN********************** -->
+      <!-- *********************Game-over SCREEN********************** -->
 
-    <div class="game-container">
-      <p>Score: <span id="score">0</span></p>
-      <p>Lives: <span id="lives">1</span></p>
-    </div>
+      <div id="game-end">
+        <h1>GAME OVER</h1>
+        <br />
+        <h3>Your Score: <span class="score">0</span></h3>
+        <button id="restart-button">Restart</button>
 
-    <div id="game-screen">
-      <button class="music-button">
-        <img src="./images/loudspeaker.jpeg" />
-      </button>
-    </div>
-    
+        <button class="music-button">
+          <img src="./images/loudspeaker.jpeg" />
+        </button>
+      </div>
 
-    <!-- *********************Game-over SCREEN********************** -->
-
-    <div id="game-end">
-      <!-- <img src="" alt="" class="" /> -->
-
-      <h2>GAME OVER</h2>
-      <br />
-      <button id="restart-button">Restart</button>
-      <button id="home-button">Home</button>
-      <button class="music-button">
-        <img src="./images/loudspeaker.jpeg" />
-      </button>
-    </div>
-
-    
-
-    
+      <div class="game-container">
+        <p>Score: <span id="score">0</span></p>
+        <p>Lives: <span id="lives">1</span></p>
+      </div>
+    </main>
     <script type="text/javascript" src="js/bullet.js"></script>
     <script type="text/javascript" src="js/player.js"></script>
     <script type="text/javascript" src="js/obstacle.js"></script>

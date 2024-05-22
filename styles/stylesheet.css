@@ -3,10 +3,11 @@ body {
   text-align: center;
   width: 900px;
   height: 600px;
-  
 }
 
-#game-intro, #game-screen, #game-end{
+#game-intro,
+#game-screen,
+#game-end {
   height: 600px;
   width: 900px;
   position: relative;
@@ -17,8 +18,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(../images/marvel-background.avif);
-  
+  background-image: url(../images/newBackground.jpg);
+  background-size: 100%;
+  background-position: center;
 }
 
 #preview {
@@ -28,24 +30,22 @@ body {
   position: relative;
 }
 
-#middle-part{
+#middle-part {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 80%;
   width: 100%;
   color: white;
-  background-color: green;
 }
-#player-select{
+#player-select {
   height: 70%;
   background-color: #870007;
-  width:200px;
+  width: 200px;
   margin-bottom: 50px;
 }
 
-
-.intro-btn{
+.intro-btn {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -73,24 +73,22 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-#controls-container img{
+#controls-container img {
   width: 120px;
 }
 
 #start-button {
   position: absolute;
   width: 200px;
-  margin-bottom: 70px ;
+  margin-bottom: 70px;
 }
 
 #game-intro h1 {
   color: black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 380%;
   font-weight: bold;
 }
-
-
 
 #game-intro li {
   font-size: 14px;
@@ -99,10 +97,11 @@ body {
   font-weight: bold;
 }
 
-
-
 .game-container {
-  z-index: 9;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 }
 
 #game-screen {
@@ -117,10 +116,19 @@ body {
 }
 
 #game-end {
-
-display: none;
-background-image: url(../images/marvel-background.avif);
-
+  display: none;
+  background-image: url(../images/newBackground.jpg);
+  background-size: 100%;
+  background-position: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#game-end h1 {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 380%;
+  font-weight: bold;
 }
 
 body button {

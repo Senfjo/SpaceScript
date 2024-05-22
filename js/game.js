@@ -4,6 +4,7 @@ class Game {
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreen = document.getElementById("game-end");
     this.musicButton = document.getElementById("music-button")
+    this.liveScore = document.querySelector(".game-container")
 
     this.player = new Player(
       this.gameScreen,
@@ -30,7 +31,7 @@ class Game {
     this.gameScreen.style.height = `${this.height}px`;
     this.gameScreen.style.width = `${this.width}px`;
     this.startScreen.style.display = "none";
-
+    this.liveScore.style.display = "flex"
     this.gameScreen.style.display = "block";
     
 
@@ -183,6 +184,9 @@ class Game {
 
   gameOver() {
     this.gameScreen.style.display = "none";
-    this.gameEndScreen.style.display = "block";
+    this.gameEndScreen.style.display = "flex";
+    this.liveScore.style.display = "none"
+    const finalScore = document.querySelector(".score");
+    finalScore.innerText = this.score
   }
 }
