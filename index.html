@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spacescript</title>
-</head>
+    <link rel="stylesheet" href="./styles/stylesheet.css" />
+  </head>
+  <body>
+    <!-- *********************Intro SCREEN********************** -->
+    <div id="game-intro">
+      <h1>Spacescript</h1>
+      <br />
+      <div id="middle-part">
+        <div id="player-select">player select</div>
+        <div id="preview">preview</div>
+        <div id="controls-container"><img id="arrowImg" src="./images/arrowKEY.jpg" alt="arrowKey img"/>
+          <img id="spacebarImg" src="./images/spacebar.png" alt="spacebar img"/>
+        
+        </div>
+      </div>
+
+      <div class="intro-btn">
+        <button id="start-button">Start Game</button>
+      </div>
+    </div>
+
+    <!-- *********************GAME SCREEN********************** -->
+
+    <div class="game-container">
+      <p>Score: <span id="score">0</span></p>
+      <p>Lives: <span id="lives">1</span></p>
+    </div>
+
+    <div id="game-screen"></div>
+    <button class="music-button"><img src="./images/loudspeaker.jpeg"/></button>
 
 
+    <!-- *********************Game-over SCREEN********************** -->
 
-<body>
-    
+    <div id="game-end">
+      <!-- <img src="" alt="" class="" /> -->
 
-    
-</body>
+      <h2>GAME OVER</h2>
+      <br />
+      <button id="restart-button">Restart</button>
+      <button id="home-button">Home</button>
+    </div>
+    <script type="text/javascript" src="js/bullet.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/obstacle.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
