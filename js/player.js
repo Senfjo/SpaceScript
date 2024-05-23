@@ -12,7 +12,12 @@ class Player {
     this.shootDelay = 700;
     this.canShoot = true;
 
+    
+    
+
     this.element.src = imgSrc;
+
+    
     this.element.style.position = "absolute";
     this.element.style.width = `${width}px`;
     this.element.style.height = `${height}px`;

@@ -4,10 +4,10 @@ class Obstacle {
 
     this.left = 950;
     this.top = Math.min(Math.random() * this.gameScreen.offsetHeight, 450);
-    this.width = 100;
+    this.width = 130;
     this.height = 150;
     this.element = document.createElement("img");
-    this.element.src = "./images/rocket2.png";
+    this.element.src = "./images/newEnemy.jpeg";
     this.element.style.position = "absolute";
     this.element.style.top = `${this.top}px`;
     this.element.style.left = `${this.left}px`;
@@ -36,7 +36,7 @@ class fastObstacle extends Obstacle {
     this.width = 100;
     this.height = 150;
     this.element = document.createElement("img");
-    this.element.src = "./images/rocket2.png";
+    this.element.src = "./images/Enemey1.png";
     this.element.style.position = "absolute";
     this.element.style.top = `${this.top}px`;
     this.element.style.left = `${this.left}px`;
@@ -57,7 +57,7 @@ class thirdObstacle extends Obstacle {
     this.width = 100;
     this.height = 150;
     this.element = document.createElement("img");
-    this.element.src = "./images/rocket2.png";
+    this.element.src = "./images/wonderwoman.png";
     this.element.style.position = "absolute";
     this.element.style.top = `${this.top}px`;
     this.element.style.left = `${this.left}px`;

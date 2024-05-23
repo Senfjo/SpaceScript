@@ -3,6 +3,7 @@ body {
   text-align: center;
   width: 900px;
   height: 600px;
+  background-color: #F05026;
 }
 
 #game-intro,
@@ -24,26 +25,34 @@ body {
 }
 
 #preview {
-  background-color: white;
-  width: 400px;
-  height: 275px;
-  position: relative;
+  
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  color: black;
+  
 }
 
 #middle-part {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  height: 80%;
-  width: 100%;
+  height: 85%;
+  width: 95%;
   color: white;
 }
 #player-select {
-  height: 70%;
-  background-color: #870007;
-  width: 200px;
-  margin-bottom: 50px;
+  height: 600px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+  
 }
+
+
 
 .intro-btn {
   width: 100%;
@@ -63,6 +72,35 @@ body {
 }
 .music-button img {
   width: 50px;
+  height: 35px;
+}
+
+.music-button2 {
+  position: absolute;
+  bottom: -25px;
+  left: -10px; /* Change to left: 20px; if you want it on the left */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.music-button2 img {
+  width: 50px;
+  height: 35px;
+}
+
+.music-button3 {
+  position: absolute;
+  bottom: -25px;
+  left: -10px; /* Change to left: 20px; if you want it on the left */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.music-button3 img {
+  width: 50px;
+  height: 35px;
 }
 
 #controls-container {
@@ -80,7 +118,7 @@ body {
 #start-button {
   position: absolute;
   width: 200px;
-  margin-bottom: 70px;
+  margin-bottom: 200px;
 }
 
 #game-intro h1 {
@@ -101,7 +139,8 @@ body {
   display: none;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 #game-screen {
@@ -140,3 +179,38 @@ body button {
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
+#player-select ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#player-select li {
+  display: inline-block;
+  margin: 5px;
+}
+
+#player-select img {
+  max-width: 200px;  /* Adjust the width as needed */
+    max-height: 200px; /* Adjust the height as needed */
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    
+}
+
+
+#preview img {
+  max-width: 300px;  /* Adjust the width as needed */
+  max-height: 300px; /* Adjust the height as needed */
+  width: auto;
+  height: auto;
+  margin-top: -30%;
+}
+
+#preview h2 {
+  margin-bottom: 0px;
+  height: 150px;
+
+}
+

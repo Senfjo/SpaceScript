@@ -1,19 +1,18 @@
 class Game {
-  constructor() {
+  constructor(playerImgSrc) {
     this.startScreen = document.getElementById("game-intro");
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreen = document.getElementById("game-end");
-    this.musicButton = document.getElementById("music-button")
-    this.liveScore = document.querySelector(".game-container")
+    this.liveScore = document.querySelector(".game-container");
+    
 
     this.player = new Player(
       this.gameScreen,
       20,
       250,
-      100,
+      130,
       150,
-      "./images/rocket1.png"
-    );
+      playerImgSrc || "./images/Raumschiff.png"    );
     this.height = 600;
     this.width = 900;
     this.bullet = [];
@@ -26,13 +25,14 @@ class Game {
     this.id = 0;
     this.gameLoopFrequency = Math.round(1000 / 60); // 60fps
   }
-
+  
   start() {
     this.gameScreen.style.height = `${this.height}px`;
     this.gameScreen.style.width = `${this.width}px`;
     this.startScreen.style.display = "none";
     this.liveScore.style.display = "flex"
     this.gameScreen.style.display = "block";
+    
     
 
     this.id = setInterval(() => {
@@ -51,6 +51,7 @@ class Game {
 
   update() {
     this.player.move();
+    console.log(playerImgSrc)
 
     if (this.score < 5) {
       this.obstacles.forEach((oneObstacle, oneObstacleIndex) => {
@@ -190,3 +191,9 @@ class Game {
     finalScore.innerText = this.score
   }
 }
+
+
+
+// if(this.counter % 200 === 0){
+//   this.obstacles.push([new Obstacle(this.gameScreen)])
+// }
