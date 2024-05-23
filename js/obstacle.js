@@ -23,7 +23,7 @@ class Obstacle {
     this.element.style.left = `${this.left}px`;
   }
 
-  destroy(){
+  destroy() {
     this.element.remove();
   }
 }
@@ -67,7 +67,7 @@ class thirdObstacle extends Obstacle {
   }
 
   thirdObstacleMove() {
-    this.left -= 10;
+    this.left -= 10.5;
     this.updatePosition();
   }
 }

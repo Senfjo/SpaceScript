@@ -21,7 +21,7 @@ class Game {
     this.fastObstacle = [new fastObstacle(this.gameScreen)];
     this.thirdObstacle = [new thirdObstacle(this.gameScreen)];
     this.score = 0;
-    this.lives = 1;
+    this.lives = 3;
     this.isGameOver = false;
     this.id = 0;
     this.gameLoopFrequency = Math.round(1000 / 60); // 60fps

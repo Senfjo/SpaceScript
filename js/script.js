@@ -1,8 +1,9 @@
 window.onload = function () {
   const startButton = document.getElementById("start-button");
   const restartButton = document.getElementById("restart-button");
-  const homeButton = document.getElementById("home-button");
-  const musicButton = document.querySelector(".music-button")
+  const musicButton = document.querySelector(".music-button");
+  const introMusic = new Audio("./sounds/AvengersIntro.mp3");
+  introMusic.volume = 0.1;
   const ourGame = new Game();
   let isShooting = false;
 
@@ -16,7 +17,7 @@ window.onload = function () {
   });
 
   document.addEventListener("keydown", (event) => {
-    console.log("a key was pressed", event);
+    // console.log("a key was pressed", event);
     if (event.code === "ArrowRight") {
       //then we move our player to the right
       ourGame.player.directionX = 4;
@@ -62,5 +63,10 @@ window.onload = function () {
   // homeButton.addEventListener("click", ()=>{
   //   ourGame.homeBtn()
   // })
+
+  musicButton.addEventListener("click",()=>{
+    introMusic.play();
+
+  })
 
 };
