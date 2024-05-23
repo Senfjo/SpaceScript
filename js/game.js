@@ -10,8 +10,8 @@ class Game {
       this.gameScreen,
       20,
       250,
-      130,
-      150,
+      200,
+      160,
       playerImgSrc || "./images/Raumschiff.png"    );
     this.height = 600;
     this.width = 900;

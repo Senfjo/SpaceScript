@@ -26,7 +26,7 @@ window.onload = function () {
   });
 
   li2Element.addEventListener("click", ()=>{
-    playerImgSrc = "./images/Quinjet copy.jpg"
+    playerImgSrc = "./images/Quinjet.png"
     updatePreview(playerImgSrc);
     console.log(playerImgSrc)
   });

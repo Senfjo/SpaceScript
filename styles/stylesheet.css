@@ -4,6 +4,7 @@ body {
   width: 900px;
   height: 600px;
   background-color: #F05026;
+  
 }
 
 #game-intro,
@@ -110,7 +111,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font-size: large;
+  font-weight: bold;
 }
+
+
 #controls-container img {
   width: 120px;
 }
@@ -178,6 +183,7 @@ body button {
   box-shadow: 0;
   border-radius: 5px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 #player-select ul {
@@ -213,4 +219,5 @@ body button {
   height: 150px;
 
 }
+
 

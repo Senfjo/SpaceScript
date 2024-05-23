@@ -9,7 +9,7 @@ class Player {
     this.directionY = 0;
     this.element = document.createElement("img");
     this.bullets = [];
-    this.shootDelay = 700;
+    this.shootDelay = 900;
     this.canShoot = true;
 
     
